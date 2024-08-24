@@ -1,0 +1,102 @@
+(**********************************************FRANCAIS********************************************************)
+COWSAY(1)              Manuel des commandes générales BSD             COWSAY(1)
+
+NOM
+     cowsay -- vache configurable parlante/pensante (et un peu plus)
+
+SYNOPSIS
+     cowsay [-b] [-d] [-g] [-p] [-s] [-t] [-w] [-y] [-h] [-e yeux] [-f fichier_vache] [-l] [-n] [-T langue] [message ...]
+
+DESCRIPTION
+     cowsay génère une image ASCII d'une vache disant quelque chose fourni par l'utilisateur. Si exécuté sans arguments, il affichera une vache aléatoire disant un message aléatoire.
+
+     Les options sont les suivantes :
+
+     -b         Mode "Borg". Utilise une vache Borg.
+     -d         Mode "mort". Utilise une vache morte.
+     -g         Mode "avare". Utilise une vache avare.
+     -p         Mode "paranoïaque". Utilise une vache paranoïaque.
+     -s         Mode "stoned". Utilise une vache droguée.
+     -t         Mode "fatigué". Utilise une vache fatiguée.
+     -w         Mode "branché". Utilise une vache branchée.
+     -y         Mode "jeune". Utilise une vache jeune.
+     -h         Afficher un message d'aide et quitter.
+     -e yeux    Change l'apparence des yeux de la vache.
+     -f fichier_vache Utilise une image de vache à partir d'un fichier (par défaut "default").
+     -l         Liste tous les fichiers de vaches disponibles dans /usr/local/share/cowsay/cows/.
+     -n         Active ou désactive le retour à la ligne des mots (par défaut désactivé).
+     -T langue  La langue est configurable de manière similaire aux yeux via -T et tongue_string.
+
+     Si du texte est donné en ligne de commande, cowsay l'affichera, sinon cowsay lira à partir de l'entrée standard.
+
+FICHIERS
+     /usr/local/share/cowsay/cows/   Emplacement par défaut des fichiers de vache.
+
+EXEMPLES
+     cowsay "Bonjour le monde !"
+     cowsay -f tux "Bonjour le monde !"
+     cowsay -e ^^ "J'adore Linux !"
+
+VOIR AUSSI
+     banner(6), fortune(6), toilet(6)
+
+STANDARD
+     La commande cowsay n'est pas une commande UNIX standard.
+
+HISTORIQUE
+     La commande cowsay a été initialement écrite en Perl par Tony Monroe. Une version Python du programme a été écrite par Yusuke Shinyama, qui est maintenant la version canonique du programme.
+
+BSD                              19 décembre 2011                             BSD
+
+
+(**********************************************Anglais********************************************************)
+COWSAY(1)                   BSD General Commands Manual                  COWSAY(1)
+
+NAME
+     cowsay -- configurable speaking/thinking cow (and a bit more)
+
+SYNOPSIS
+     cowsay [-b] [-d] [-g] [-p] [-s] [-t] [-w] [-y] [-h] [-e eyes] [-f cowfile] [-l] [-n] [-T tongue] [message ...]
+
+DESCRIPTION
+     cowsay generates an ASCII picture of a cow saying something provided by the user.  If run with no arguments, it will
+     display a random cow saying a random message.
+
+     The options are as follows:
+
+     -b         Mode "Borg".  Use a Borg cow.
+     -d         Mode "dead".  Use a dead cow.
+     -g         Mode "greedy".  Use a greedy cow.
+     -p         Mode "paranoid".  Use a paranoid cow.
+     -s         Mode "stoned".  Use a stoned cow.
+     -t         Mode "tired".  Use a tired cow.
+     -w         Mode "wired".  Use a wired cow.
+     -y         Mode "youthful".  Use a youthful cow.
+     -h         Display a help message and exit.
+     -e eyes    Change the appearance of the cow's eyes.
+     -f cowfile Use a cow picture from a file (default is "default").
+     -l         List all cowfiles available in /usr/local/share/cowsay/cows/.
+     -n         Toggle word-wrapping on or off (default off).
+     -T tongue  The tongue is configurable similarly to the eyes through -T and tongue_string.
+
+     If any text is given on the command line, cowsay will display it, otherwise cowsay will read from standard input.
+
+FILES
+     /usr/local/share/cowsay/cows/   default location for cow files.
+
+EXAMPLES
+     cowsay "Hello, world!"
+     cowsay -f tux "Hello, world!"
+     cowsay -e ^^ "I love Linux!"
+
+SEE ALSO
+     banner(6), fortune(6), toilet(6)
+
+STANDARDS
+     The cowsay command is not a standard UNIX command.
+
+HISTORY
+     The cowsay command was originally written in Perl by Tony Monroe.  A Python version of the program was written by
+     Yusuke Shinyama, which is now the canonical version of the program.
+
+BSD                              December 19, 2011                              BSD
